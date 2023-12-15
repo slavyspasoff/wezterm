@@ -13,7 +13,8 @@ end
 -- fonts
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = 400 })
 -- config.font = wezterm.font("Victor Mono", { weight = 500 })
-config.font_size = 11.5
+config.font_size = 12.5
+config.freetype_load_target = "HorizontalLcd"
 
 -- color scheme
 for k, v in pairs(colorscheme) do
@@ -34,7 +35,12 @@ config.hide_tab_bar_if_only_one_tab = true
 -- size
 config.initial_rows = 20
 config.initial_cols = 105
-
+config.window_padding = {
+	left = 8,
+	right = 0,
+	top = 0,
+	bottom = 0,
+}
 -- anti-aliasing
 config.anti_alias_custom_block_glyphs = true
 
