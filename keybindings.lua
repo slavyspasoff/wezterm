@@ -3,6 +3,11 @@ local action = wezterm.action
 
 local keybindings = {
 	{
+		key = "f",
+		mods = "CTRL|SHIFT",
+		action = action.ToggleFullScreen,
+	},
+	{
 		key = "c",
 		mods = "CTRL|SHIFT",
 		action = action.CopyTo("Clipboard"),
@@ -23,7 +28,7 @@ local keybindings = {
 		action = action.SpawnTab("CurrentPaneDomain"),
 	},
 	{
-		key = "h",
+		key = "|",
 		mods = "CTRL|SHIFT",
 		action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
@@ -38,12 +43,12 @@ local keybindings = {
 		action = action.ActivatePaneDirection("Right"),
 	},
 	{
-		key = "LeftArrow",
+		key = "h",
 		mods = "CTRL|SHIFT",
 		action = action.ActivateTabRelative(-1),
 	},
 	{
-		key = "RightArrow",
+		key = "l",
 		mods = "CTRL|SHIFT",
 		action = action.ActivateTabRelative(1),
 	},
