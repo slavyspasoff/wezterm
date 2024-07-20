@@ -68,11 +68,6 @@ local keybindings = {
 		action = action.ScrollByPage(1),
 	},
 	{
-		key = "j",
-		mods = "SHIFT|CTRL",
-		action = action.Search("CurrentSelectionOrEmptyString"),
-	},
-	{
 		key = "p",
 		mods = "SHIFT|CTRL",
 		action = action.ActivateCommandPalette,

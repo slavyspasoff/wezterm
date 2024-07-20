@@ -12,9 +12,7 @@ end
 
 -- fonts
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = 400 })
-config.font_size = 12.5
--- config.font = wezterm.font("Geist Mono", { weight = 400 })
--- config.font_size = 13
+config.font_size = 13
 config.freetype_load_target = "HorizontalLcd"
 
 -- color scheme
@@ -31,6 +29,7 @@ config.detect_password_input = true
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 config.window_decorations = "RESIZE"
+config.enable_wayland = false
 config.hide_tab_bar_if_only_one_tab = true
 
 -- size
@@ -46,11 +45,11 @@ config.window_padding = {
 config.anti_alias_custom_block_glyphs = true
 
 -- cursor
-config.default_cursor_style = "SteadyUnderline"
+-- config.default_cursor_style = "SteadyUnderline"
 config.default_cursor_style = "BlinkingUnderline"
 
 -- scrollback
-config.scrollback_lines = 3000
+config.scrollback_lines = 10000
 
 -- animation
 config.animation_fps = 60
